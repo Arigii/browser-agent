@@ -1,0 +1,23 @@
+{
+  "name": "browser-agent",
+  "version": "1.0.0",
+  "description": "Autonomous AI agent that controls a real browser (Claude, OpenAI, Gemini, or Groq)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "postinstall": "playwright install chromium || true"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@google/genai": "^2.24.0",
+    "dotenv": "^16.4.5",
+    "openai": "^4.68.0",
+    "playwright": "^1.48.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
